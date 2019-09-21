@@ -1,6 +1,6 @@
 #!/bin/bash
-apt-get update
-apt-get install -y apache vim 
+sudo apt-get update
+sudo apt-get install apache2 
 sudo touch /var/www/html/index.html
-echo "Hello World by packer" > /var/www/html/index.html
-sudo /etc/init.d/apache start 
+sudo echo "Hello World by packer" > /var/www/html/index.html
+sudo systemctl restart apache2 
